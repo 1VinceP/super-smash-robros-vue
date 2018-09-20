@@ -31,7 +31,7 @@
 
 
 </div>
-  
+
 </template>
 <!--
 ---------------------------------
@@ -99,7 +99,7 @@
         console.log( 'hit' )
         if( monster === this.monster1 ) {
           this.monster1 = ''
-          this.displayFight = false          
+          this.displayFight = false
         }
         this.monster2 = monster
 
@@ -135,7 +135,7 @@
             this.bonus1 = ''
             this.bonus2 = ''
           }, 3000);
-          
+
         }
         if( monster2.cHealth <= 0 ) {
           console.log( 'hit2' )
@@ -149,12 +149,12 @@
             this.bonus1 = ''
             this.bonus2 = ''
           }, 3000);
-          
+
         }
 
         console.log( this.monsters )
       },
-    
+
       addSuper() {
         let newMonster = {
           name: 'Vincent',

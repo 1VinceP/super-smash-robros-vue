@@ -1,7 +1,9 @@
 <template>
     <div class='scoreboard'>
         <div>{{score1}}</div>
-        <div>SCOREBOARD</div>
+        <div class='title'>
+            SCOREBOARD - <h4 class='react-link'>See my React version <a href='http://supersmashrobros.surge.sh' target='_blank'  rel='noopener noreferrer'>here</a></h4>
+        </div>
         <div>{{score2}}</div>
     </div>
 </template>
@@ -28,5 +30,19 @@
       padding: 0 40px;
       align-items: center;
       margin-bottom: 60px;
+  }
+
+  .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .react-link {
+      color: #fff;
+  }
+
+  a {
+      color: #ccc;
   }
 </style>
